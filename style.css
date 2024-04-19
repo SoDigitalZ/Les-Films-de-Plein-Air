@@ -1,0 +1,154 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+header,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+button,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+  text-align: center;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.header-top {
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: flex-start; /* Aligner les éléments au début du conteneur */
+  }
+  
+  .menu-toggle {
+    margin-left: auto; /* Pousse le bouton vers la droite */
+  }
+  
+header {
+    padding: 20px;
+  }
+
+.logo {
+    max-width: 400px; /* ou une autre valeur fixe */
+    width: 50vw; /* ajustez en fonction de la largeur de l'écran */
+    height: auto; /* pour conserver les proportions */
+}
+
+nav {
+    display: none;
+  }
+  
+.intro {
+    background-color: #EDF0F7;
+    width: 100%;
+    border-top: 2px solid #000; /* 2px est l'épaisseur de la bordure, solid est le style, et #000 est la couleur (noir) */
+    border-bottom: 2px solid #000; /* 2px est l'épaisseur de la bordure, solid est le style, et #000 est la couleur (noir) */
+    padding-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    border-radius: 4px;
+    
+}
+
+button:hover {
+    background-color: #2D3648;
+    color: white;
+}
+
+.newsletter {
+    background-color: #EDF0F7;
+    padding: 10%;
+}
+
+/* Style pour le container de la checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Centre verticalement le texte avec la checkbox */
+    cursor: pointer; /* Change le curseur en main pour indiquer que c'est cliquable */
+    justify-content: center; /* Centre horizontalement */
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  /* Style pour la checkbox */
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 10px; /* Ajoute un peu d'espace entre la checkbox et le texte */
+  }
+
+  .button-newsletter {
+    margin-top: 0px;
+    display: block; /* Rend le bouton traité comme un élément de bloc */
+    margin-left: auto; /* Pousse le bouton vers la droite */
+    margin-right: 0; /* Assure que le bouton est aligné à droite sans marge supplémentaire */
+    margin-top: 0;
+  }
+
+.newsletter form {
+    background-color: white;
+    padding: 20px;
+}
