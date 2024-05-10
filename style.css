@@ -171,6 +171,10 @@ button:hover {
     padding: 20px;
 }
 
+footer {
+  background-color: #1A202C;
+}
+
 .footer-logo {
   display: flex; /* Utilise flexbox pour aligner les éléments */
   justify-content: center; /* Centre horizontalement */
