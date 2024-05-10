@@ -101,12 +101,30 @@ nav {
     display: none;
   }
   
-.intro {
+  .intro {
     background-color: #EDF0F7;
+    color: white;
     width: 100%;
     border-top: 2px solid #000; /* 2px est l'épaisseur de la bordure, solid est le style, et #000 est la couleur (noir) */
     border-bottom: 2px solid #000; /* 2px est l'épaisseur de la bordure, solid est le style, et #000 est la couleur (noir) */
     padding-bottom: 20px;
+    background-image: url('img/banner.png');
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'élément */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+.intro .text-zone {
+  position: relative; /* Assure que les éléments à l'intérieur se positionnent correctement */
+  padding: 20px; /* Ajustez selon vos besoins */
+  background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond sombre avec une opacité faible */
+  color: white; /* Couleur du texte en blanc */
+  z-index: 1; /* Pour s'assurer que le texte est au-dessus de l'overlay */
+  max-width: 40%;
+  margin: auto; /* Centre la zone de texte horizontalement */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
 }
 
 button {
@@ -151,4 +169,11 @@ button:hover {
 .newsletter form {
     background-color: white;
     padding: 20px;
+}
+
+.footer-logo {
+  display: flex; /* Utilise flexbox pour aligner les éléments */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  margin-bottom: 20px; /* Ajoute un espace entre le logo et les liens de navigation */
 }
